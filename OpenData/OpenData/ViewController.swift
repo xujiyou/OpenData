@@ -7,13 +7,54 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
+    
+    let identifier = "iconCell"
+    
+    let iconList = [
+        IconModel(iconName: "one-news", title: "新闻头条", controller: NewsViewController()),
+        IconModel(iconName: "two-phone", title: "手机号码归属地", controller: NewsViewController()),
+        IconModel(iconName: "three-lottery", title: "彩票开奖结果", controller: NewsViewController()),
+        IconModel(iconName: "four-weather", title: "天气预报", controller: NewsViewController()),
+        IconModel(iconName: "five-ercode", title: "二维码生成", controller: NewsViewController()),
+        IconModel(iconName: "six-exchange", title: "汇率", controller: NewsViewController()),
+        IconModel(iconName: "seven-history", title: "历史上的今天", controller: NewsViewController()),
+        IconModel(iconName: "eight-wechat", title: "微信精选", controller: NewsViewController()),
+        IconModel(iconName: "nine-qq", title: "QQ号码测吉凶", controller: NewsViewController()),
+        IconModel(iconName: "ten-joke", title: "笑话大全", controller: NewsViewController()),
+        IconModel(iconName: "eleven-zidian", title: "新华字典", controller: NewsViewController()),
+        IconModel(iconName: "twelve-change", title: "简/繁字体转换", controller: NewsViewController()),
+        IconModel(iconName: "thirteen-youzheng", title: "邮编查询", controller: NewsViewController()),
+        IconModel(iconName: "fourteen-huangli", title: "老黄历", controller: NewsViewController()),
+        IconModel(iconName: "fifteen-wifi", title: "全国WIFI", controller: NewsViewController()),
+        IconModel(iconName: "fifteen-wifi", title: "货币汇率", controller: NewsViewController())
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "OpenData"
         self.view.backgroundColor = UIColor.white
+        self.view.autoresizesSubviews = false
+        
+        let width = (UIScreen.main.bounds.width - 64) / 3
+        let flow = UICollectionViewFlowLayout()
+        flow.minimumLineSpacing = 16
+        flow.itemSize = CGSize(width: width, height: width * 1.24)
+        flow.sectionInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        
+        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flow)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = UIColor.white
+        collectionView.register(IconCell.self, forCellWithReuseIdentifier: identifier)
+        collectionView.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        self.view.addSubview(collectionView)
+        collectionView.snp_makeConstraints({make in
+            make.left.top.right.bottom.equalToSuperview()
+        })
+        
     }
     
     @objc func injected(){
@@ -22,5 +63,20 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return iconList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! IconCell
+        cell.setIconModel(model: iconList[indexPath.row])
+        //cell.contentView.backgroundColor = UIColor.red
+        return cell
+    }
+    
 }
 

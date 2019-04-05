@@ -12,6 +12,9 @@
 		053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */; };
 		053E934522562B2C002E0BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053E934422562B2C002E0BDB /* Assets.xcassets */; };
 		053E934822562B2C002E0BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053E934622562B2C002E0BDB /* LaunchScreen.storyboard */; };
+		053E93512257119C002E0BDB /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E93502257119C002E0BDB /* IconCell.swift */; };
+		053E93542257433E002E0BDB /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E93532257433E002E0BDB /* IconModel.swift */; };
+		053E935722574453002E0BDB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E935622574453002E0BDB /* NewsViewController.swift */; };
 		21B9711DBC69666CA8C2D059 /* Pods_OpenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		053E934422562B2C002E0BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		053E934722562B2C002E0BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		053E934922562B2C002E0BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053E93502257119C002E0BDB /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		053E93532257433E002E0BDB /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconModel.swift; sourceTree = "<group>"; };
+		053E935622574453002E0BDB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.release.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.release.xcconfig"; sourceTree = "<group>"; };
 		E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.debug.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 		053E933922562B2B002E0BDB /* OpenData */ = {
 			isa = PBXGroup;
 			children = (
+				053E935522574420002E0BDB /* controller */,
+				053E935222574321002E0BDB /* model */,
+				053E934F22571174002E0BDB /* cell */,
 				053E933A22562B2B002E0BDB /* AppDelegate.swift */,
 				053E933C22562B2B002E0BDB /* ViewController.swift */,
 				053E934422562B2C002E0BDB /* Assets.xcassets */,
@@ -69,6 +78,30 @@
 				053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */,
 			);
 			path = OpenData;
+			sourceTree = "<group>";
+		};
+		053E934F22571174002E0BDB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				053E93502257119C002E0BDB /* IconCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		053E935222574321002E0BDB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				053E93532257433E002E0BDB /* IconModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		053E935522574420002E0BDB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				053E935622574453002E0BDB /* NewsViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		137C1A1E521066C5B906DB04 /* Frameworks */ = {
@@ -85,7 +118,6 @@
 				E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */,
 				923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053E93542257433E002E0BDB /* IconModel.swift in Sources */,
 				053E933D22562B2B002E0BDB /* ViewController.swift in Sources */,
 				053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */,
+				053E935722574453002E0BDB /* NewsViewController.swift in Sources */,
+				053E93512257119C002E0BDB /* IconCell.swift in Sources */,
 				053E933B22562B2B002E0BDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
