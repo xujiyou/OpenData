@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		053E933B22562B2B002E0BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E933A22562B2B002E0BDB /* AppDelegate.swift */; };
 		053E933D22562B2B002E0BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E933C22562B2B002E0BDB /* ViewController.swift */; };
-		053E934022562B2B002E0BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053E933E22562B2B002E0BDB /* Main.storyboard */; };
 		053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */; };
 		053E934522562B2C002E0BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053E934422562B2C002E0BDB /* Assets.xcassets */; };
 		053E934822562B2C002E0BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053E934622562B2C002E0BDB /* LaunchScreen.storyboard */; };
+		21B9711DBC69666CA8C2D059 /* Pods_OpenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		053E933722562B2B002E0BDB /* OpenData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		053E933A22562B2B002E0BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		053E933C22562B2B002E0BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		053E933F22562B2B002E0BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		053E934222562B2B002E0BDB /* OpenData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenData.xcdatamodel; sourceTree = "<group>"; };
 		053E934422562B2C002E0BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		053E934722562B2C002E0BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		053E934922562B2C002E0BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.release.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.release.xcconfig"; sourceTree = "<group>"; };
+		E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.debug.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B9711DBC69666CA8C2D059 /* Pods_OpenData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				053E933922562B2B002E0BDB /* OpenData */,
 				053E933822562B2B002E0BDB /* Products */,
+				8E5A5662315D7DCD0E0320A1 /* Pods */,
+				137C1A1E521066C5B906DB04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +63,30 @@
 			children = (
 				053E933A22562B2B002E0BDB /* AppDelegate.swift */,
 				053E933C22562B2B002E0BDB /* ViewController.swift */,
-				053E933E22562B2B002E0BDB /* Main.storyboard */,
 				053E934422562B2C002E0BDB /* Assets.xcassets */,
 				053E934622562B2C002E0BDB /* LaunchScreen.storyboard */,
 				053E934922562B2C002E0BDB /* Info.plist */,
 				053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */,
 			);
 			path = OpenData;
+			sourceTree = "<group>";
+		};
+		137C1A1E521066C5B906DB04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E5A5662315D7DCD0E0320A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */,
+				923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 053E934C22562B2C002E0BDB /* Build configuration list for PBXNativeTarget "OpenData" */;
 			buildPhases = (
+				CE0E908E1B4CB0EA2CA049E6 /* [CP] Check Pods Manifest.lock */,
 				053E933322562B2B002E0BDB /* Sources */,
 				053E933422562B2B002E0BDB /* Frameworks */,
 				053E933522562B2B002E0BDB /* Resources */,
+				20839E488FF171334E5D2945 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +151,57 @@
 			files = (
 				053E934822562B2C002E0BDB /* LaunchScreen.storyboard in Resources */,
 				053E934522562B2C002E0BDB /* Assets.xcassets in Resources */,
-				053E934022562B2B002E0BDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20839E488FF171334E5D2945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenData/Pods-OpenData-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenData/Pods-OpenData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0E908E1B4CB0EA2CA049E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		053E933322562B2B002E0BDB /* Sources */ = {
@@ -147,14 +217,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		053E933E22562B2B002E0BDB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				053E933F22562B2B002E0BDB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		053E934622562B2C002E0BDB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +346,7 @@
 		};
 		053E934D22562B2C002E0BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +365,7 @@
 		};
 		053E934E22562B2C002E0BDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
