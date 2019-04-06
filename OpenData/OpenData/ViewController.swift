@@ -71,6 +71,10 @@ class ViewController: UIViewController {
         viewDidLoad()
     }
 
+    @objc func tapCell(tap: UITapGestureRecognizer) {
+        let cell = tap.view as! IconCell
+        self.navigationController?.pushViewController((cell.iconModel?.controller!)!, animated: true)
+    }
 
 }
 
@@ -83,8 +87,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! IconCell
         cell.setIconModel(model: iconList[indexPath.row])
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapCell))
+        cell.addGestureRecognizer(tap)
         return cell
     }
+    
+   
     
 }
 
