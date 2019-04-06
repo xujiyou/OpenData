@@ -25,11 +25,20 @@ class ViewController: UIViewController {
         IconModel(iconName: "nine-qq", title: "QQ号码测吉凶", controller: NewsViewController()),
         IconModel(iconName: "ten-joke", title: "笑话大全", controller: NewsViewController()),
         IconModel(iconName: "eleven-zidian", title: "新华字典", controller: NewsViewController()),
+        IconModel(iconName: "fullup-chengyu", title: "成语词典", controller: NewsViewController()),
         IconModel(iconName: "twelve-change", title: "简/繁字体转换", controller: NewsViewController()),
         IconModel(iconName: "thirteen-youzheng", title: "邮编查询", controller: NewsViewController()),
         IconModel(iconName: "fourteen-huangli", title: "老黄历", controller: NewsViewController()),
         IconModel(iconName: "fifteen-wifi", title: "全国WIFI", controller: NewsViewController()),
-        IconModel(iconName: "fifteen-wifi", title: "货币汇率", controller: NewsViewController())
+        IconModel(iconName: "sixteen-data", title: "净值数据", controller: NewsViewController()),
+        IconModel(iconName: "seventeen-jijin", title: "暂停基金", controller: NewsViewController()),
+        IconModel(iconName: "eighteen-huangjin", title: "黄金数据", controller: NewsViewController()),
+        IconModel(iconName: "nineteen-shenfen", title: "身份证查询", controller: NewsViewController()),
+        IconModel(iconName: "twenty-book", title: "图书电商数据", controller: NewsViewController()),
+        IconModel(iconName: "twenty-one-xingzuo", title: "星座运势", controller: NewsViewController()),
+        IconModel(iconName: "twenty-two", title: "周公解梦", controller: NewsViewController()),
+        IconModel(iconName: "twenty-three", title: "IP地址", controller: NewsViewController()),
+        IconModel(iconName: "twenty-four", title: "H5在线电影票", controller: NewsViewController())
     ]
 
     override func viewDidLoad() {
@@ -74,7 +83,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! IconCell
         cell.setIconModel(model: iconList[indexPath.row])
-        //cell.contentView.backgroundColor = UIColor.red
         return cell
     }
     
