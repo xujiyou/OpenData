@@ -26,9 +26,9 @@ class IconCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.layer.borderWidth = 1.0
+        self.layer.borderWidth = 0.4
         self.layer.cornerRadius = 4.0
-        self.layer.borderColor = UIColor(displayP3Red: 230 / 255, green: 230 / 255, blue: 230 / 255, alpha: 1.0).cgColor
+        self.layer.borderColor = UIColor(displayP3Red: 200 / 255, green: 200 / 255, blue: 200 / 255, alpha: 1.0).cgColor
         
         let width = UIScreen.main.bounds.width / 10
         

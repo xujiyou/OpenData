@@ -11,6 +11,8 @@ import SnapKit
 
 class ViewController: UIViewController {
     
+    var shadowImage: UIImage?
+    
     let identifier = "iconCell"
     
     let iconList = [
