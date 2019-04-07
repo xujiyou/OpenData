@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     let iconList = [
         IconModel(iconName: "one-news", title: "新闻头条", controller: NewsViewController()),
-        IconModel(iconName: "two-phone", title: "手机号码归属地", controller: NewsViewController()),
+        IconModel(iconName: "two-phone", title: "手机号码归属地", controller: PhonePlaceViewController()),
         IconModel(iconName: "three-lottery", title: "彩票开奖结果", controller: NewsViewController()),
         IconModel(iconName: "four-weather", title: "天气预报", controller: NewsViewController()),
         IconModel(iconName: "five-ercode", title: "二维码生成", controller: NewsViewController()),
