@@ -17,6 +17,10 @@
 		053E935722574453002E0BDB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E935622574453002E0BDB /* NewsViewController.swift */; };
 		05CB5A2E22587E80006CFCFC /* PaperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2D22587E80006CFCFC /* PaperTabView.swift */; };
 		05CB5A302258854A006CFCFC /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */; };
+		05CB5A332259994D006CFCFC /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A322259994D006CFCFC /* NewsTableViewController.swift */; };
+		05CB5A3522599DDB006CFCFC /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A3422599DDB006CFCFC /* NewsCell.swift */; };
+		05CB5A372259A071006CFCFC /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A362259A071006CFCFC /* NewsModel.swift */; };
+		05CB5A392259CFA5006CFCFC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A382259CFA5006CFCFC /* WebViewController.swift */; };
 		21B9711DBC69666CA8C2D059 /* Pods_OpenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,10 @@
 		053E935622574453002E0BDB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		05CB5A2D22587E80006CFCFC /* PaperTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperTabView.swift; sourceTree = "<group>"; };
 		05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
+		05CB5A322259994D006CFCFC /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		05CB5A3422599DDB006CFCFC /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		05CB5A362259A071006CFCFC /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		05CB5A382259CFA5006CFCFC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0A55DB8DC804C45425A016C9 /* Pods_OpenData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		923146873B593F58B0FA09D2 /* Pods-OpenData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.release.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.release.xcconfig"; sourceTree = "<group>"; };
 		E4890CC00FC6FB6666A91A84 /* Pods-OpenData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenData.debug.xcconfig"; path = "Target Support Files/Pods-OpenData/Pods-OpenData.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				053E93502257119C002E0BDB /* IconCell.swift */,
+				05CB5A3422599DDB006CFCFC /* NewsCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -98,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				053E93532257433E002E0BDB /* IconModel.swift */,
+				05CB5A362259A071006CFCFC /* NewsModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -105,7 +115,7 @@
 		053E935522574420002E0BDB /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				053E935622574453002E0BDB /* NewsViewController.swift */,
+				05CB5A3122599916006CFCFC /* news */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -124,6 +134,16 @@
 				05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */,
 			);
 			path = tab;
+			sourceTree = "<group>";
+		};
+		05CB5A3122599916006CFCFC /* news */ = {
+			isa = PBXGroup;
+			children = (
+				053E935622574453002E0BDB /* NewsViewController.swift */,
+				05CB5A322259994D006CFCFC /* NewsTableViewController.swift */,
+				05CB5A382259CFA5006CFCFC /* WebViewController.swift */,
+			);
+			path = news;
 			sourceTree = "<group>";
 		};
 		137C1A1E521066C5B906DB04 /* Frameworks */ = {
@@ -220,12 +240,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OpenData/Pods-OpenData-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +290,14 @@
 				05CB5A2E22587E80006CFCFC /* PaperTabView.swift in Sources */,
 				053E93542257433E002E0BDB /* IconModel.swift in Sources */,
 				053E933D22562B2B002E0BDB /* ViewController.swift in Sources */,
+				05CB5A3522599DDB006CFCFC /* NewsCell.swift in Sources */,
 				053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */,
+				05CB5A372259A071006CFCFC /* NewsModel.swift in Sources */,
+				05CB5A392259CFA5006CFCFC /* WebViewController.swift in Sources */,
 				053E935722574453002E0BDB /* NewsViewController.swift in Sources */,
 				053E93512257119C002E0BDB /* IconCell.swift in Sources */,
 				053E933B22562B2B002E0BDB /* AppDelegate.swift in Sources */,
+				05CB5A332259994D006CFCFC /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

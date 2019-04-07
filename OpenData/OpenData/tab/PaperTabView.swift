@@ -20,11 +20,11 @@ class PaperTabView: UIView, UIScrollViewDelegate {
     
     var tabFrameHeight: CGFloat = 36 //头部tab高
     var tabBackgroundColor: UIColor = UIColor.white //头部tab背景颜色
-    var tabButtonFontSize: CGFloat = 14 //头部tab按钮字体大小
-    var tabMargin: CGFloat = 12 //头部tab左右两端和边缘的间隔
+    var tabButtonFontSize: CGFloat = 12 //头部tab按钮字体大小
+    var tabMargin: CGFloat = 8 //头部tab左右两端和边缘的间隔
     var tabButtonTitleColorForNormal: UIColor = UIColor.black //未选中时按钮文字的颜色
-    var tabButtonTitleColorForSelected: UIColor = UIColor.red //选中时按钮文字的颜色
-    var selectedLineWidth: CGFloat = 42 //下划线的宽
+    var tabButtonTitleColorForSelected: UIColor = UIColor(red: 0, green: 155 / 255, blue: 1, alpha: 1.0) //选中时按钮文字的颜色
+    var selectedLineWidth: CGFloat = 24 //下划线的宽
     
     var isBuildUI: Bool = false
     var isUseDragging: Bool = false
@@ -51,7 +51,7 @@ class PaperTabView: UIView, UIScrollViewDelegate {
     
     lazy var selectedLine: UIView = {
         let line = UIView(frame: CGRect(x: 0, y: self.tabView.height() - 2, width: self.selectedLineWidth, height: 2))
-        line.backgroundColor = UIColor.red
+        line.backgroundColor = UIColor(red: 0, green: 155 / 255, blue: 1, alpha: 1.0)
         self.addSubview(line)
         return line
     }()
