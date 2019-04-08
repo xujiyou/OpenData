@@ -16,6 +16,9 @@
 		053E93542257433E002E0BDB /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E93532257433E002E0BDB /* IconModel.swift */; };
 		053E935722574453002E0BDB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E935622574453002E0BDB /* NewsViewController.swift */; };
 		05780168225ACB1B00D49FFF /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05780167225ACB1B00D49FFF /* LotteryViewController.swift */; };
+		0578016D225AD23100D49FFF /* LotteryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578016C225AD23100D49FFF /* LotteryListTableViewController.swift */; };
+		0578016F225AD4A500D49FFF /* LotteryTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578016E225AD4A500D49FFF /* LotteryTypeModel.swift */; };
+		05780171225AD79900D49FFF /* LotteryTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05780170225AD79900D49FFF /* LotteryTypeCell.swift */; };
 		05CB5A2E22587E80006CFCFC /* PaperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2D22587E80006CFCFC /* PaperTabView.swift */; };
 		05CB5A302258854A006CFCFC /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */; };
 		05CB5A332259994D006CFCFC /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A322259994D006CFCFC /* NewsTableViewController.swift */; };
@@ -39,6 +42,9 @@
 		053E93532257433E002E0BDB /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconModel.swift; sourceTree = "<group>"; };
 		053E935622574453002E0BDB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		05780167225ACB1B00D49FFF /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
+		0578016C225AD23100D49FFF /* LotteryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryListTableViewController.swift; sourceTree = "<group>"; };
+		0578016E225AD4A500D49FFF /* LotteryTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTypeModel.swift; sourceTree = "<group>"; };
+		05780170225AD79900D49FFF /* LotteryTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryTypeCell.swift; sourceTree = "<group>"; };
 		05CB5A2D22587E80006CFCFC /* PaperTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperTabView.swift; sourceTree = "<group>"; };
 		05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
 		05CB5A322259994D006CFCFC /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			children = (
 				053E93502257119C002E0BDB /* IconCell.swift */,
 				05CB5A3422599DDB006CFCFC /* NewsCell.swift */,
+				05780170225AD79900D49FFF /* LotteryTypeCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 				053E93532257433E002E0BDB /* IconModel.swift */,
 				05CB5A362259A071006CFCFC /* NewsModel.swift */,
 				05CB5A3D2259EC77006CFCFC /* PhonePlaceModel.swift */,
+				0578016E225AD4A500D49FFF /* LotteryTypeModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				05780167225ACB1B00D49FFF /* LotteryViewController.swift */,
+				0578016C225AD23100D49FFF /* LotteryListTableViewController.swift */,
 			);
 			path = lottery;
 			sourceTree = "<group>";
@@ -324,6 +333,8 @@
 				053E93542257433E002E0BDB /* IconModel.swift in Sources */,
 				053E933D22562B2B002E0BDB /* MainViewController.swift in Sources */,
 				05780168225ACB1B00D49FFF /* LotteryViewController.swift in Sources */,
+				05780171225AD79900D49FFF /* LotteryTypeCell.swift in Sources */,
+				0578016D225AD23100D49FFF /* LotteryListTableViewController.swift in Sources */,
 				05CB5A3522599DDB006CFCFC /* NewsCell.swift in Sources */,
 				053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */,
 				05CB5A3E2259EC77006CFCFC /* PhonePlaceModel.swift in Sources */,
@@ -333,6 +344,7 @@
 				053E935722574453002E0BDB /* NewsViewController.swift in Sources */,
 				053E93512257119C002E0BDB /* IconCell.swift in Sources */,
 				053E933B22562B2B002E0BDB /* AppDelegate.swift in Sources */,
+				0578016F225AD4A500D49FFF /* LotteryTypeModel.swift in Sources */,
 				05CB5A332259994D006CFCFC /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

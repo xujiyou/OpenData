@@ -87,7 +87,7 @@ class LotteryViewController: UIViewController {
     }
     
     @objc func clickListButton(button: UIButton) {
-        //self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
+        self.navigationController?.pushViewController(LotteryListTableViewController(), animated: true)
     }
 
 }
