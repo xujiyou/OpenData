@@ -14,8 +14,6 @@ class PhonePlaceViewController: UIViewController {
     
     var phonePlaceModel: PhonePlaceModel?
     
-    let primaryColor = UIColor(red: 0, green: 155 / 255, blue: 1, alpha: 1.0)
-    
     lazy var phoneInput: UITextField = {
         let field = UITextField()
         field.placeholder = "请输入手机号"

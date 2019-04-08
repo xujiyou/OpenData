@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		053E933B22562B2B002E0BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E933A22562B2B002E0BDB /* AppDelegate.swift */; };
-		053E933D22562B2B002E0BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E933C22562B2B002E0BDB /* ViewController.swift */; };
+		053E933D22562B2B002E0BDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E933C22562B2B002E0BDB /* MainViewController.swift */; };
 		053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */; };
 		053E934522562B2C002E0BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053E934422562B2C002E0BDB /* Assets.xcassets */; };
 		053E934822562B2C002E0BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053E934622562B2C002E0BDB /* LaunchScreen.storyboard */; };
 		053E93512257119C002E0BDB /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E93502257119C002E0BDB /* IconCell.swift */; };
 		053E93542257433E002E0BDB /* IconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E93532257433E002E0BDB /* IconModel.swift */; };
 		053E935722574453002E0BDB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E935622574453002E0BDB /* NewsViewController.swift */; };
+		05780168225ACB1B00D49FFF /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05780167225ACB1B00D49FFF /* LotteryViewController.swift */; };
 		05CB5A2E22587E80006CFCFC /* PaperTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2D22587E80006CFCFC /* PaperTabView.swift */; };
 		05CB5A302258854A006CFCFC /* UIViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */; };
 		05CB5A332259994D006CFCFC /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB5A322259994D006CFCFC /* NewsTableViewController.swift */; };
@@ -29,7 +30,7 @@
 /* Begin PBXFileReference section */
 		053E933722562B2B002E0BDB /* OpenData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		053E933A22562B2B002E0BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		053E933C22562B2B002E0BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		053E933C22562B2B002E0BDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		053E934222562B2B002E0BDB /* OpenData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenData.xcdatamodel; sourceTree = "<group>"; };
 		053E934422562B2C002E0BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		053E934722562B2C002E0BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		053E93502257119C002E0BDB /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		053E93532257433E002E0BDB /* IconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconModel.swift; sourceTree = "<group>"; };
 		053E935622574453002E0BDB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		05780167225ACB1B00D49FFF /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		05CB5A2D22587E80006CFCFC /* PaperTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperTabView.swift; sourceTree = "<group>"; };
 		05CB5A2F2258854A006CFCFC /* UIViewAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAdditions.swift; sourceTree = "<group>"; };
 		05CB5A322259994D006CFCFC /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
@@ -83,17 +85,12 @@
 		053E933922562B2B002E0BDB /* OpenData */ = {
 			isa = PBXGroup;
 			children = (
-				05CB5A2C22587E25006CFCFC /* tab */,
-				057BFC95225861AA00C95737 /* view */,
+				0578016B225AD18800D49FFF /* plugin */,
+				0578016A225AD16800D49FFF /* app */,
 				053E935522574420002E0BDB /* controller */,
 				053E935222574321002E0BDB /* model */,
 				053E934F22571174002E0BDB /* cell */,
-				053E933A22562B2B002E0BDB /* AppDelegate.swift */,
-				053E933C22562B2B002E0BDB /* ViewController.swift */,
 				053E934422562B2C002E0BDB /* Assets.xcassets */,
-				053E934622562B2C002E0BDB /* LaunchScreen.storyboard */,
-				053E934922562B2C002E0BDB /* Info.plist */,
-				053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */,
 			);
 			path = OpenData;
 			sourceTree = "<group>";
@@ -120,17 +117,39 @@
 		053E935522574420002E0BDB /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				053E933C22562B2B002E0BDB /* MainViewController.swift */,
+				05780166225ACAC200D49FFF /* lottery */,
 				05CB5A3A2259E068006CFCFC /* phone_place */,
 				05CB5A3122599916006CFCFC /* news */,
 			);
 			path = controller;
 			sourceTree = "<group>";
 		};
-		057BFC95225861AA00C95737 /* view */ = {
+		05780166225ACAC200D49FFF /* lottery */ = {
 			isa = PBXGroup;
 			children = (
+				05780167225ACB1B00D49FFF /* LotteryViewController.swift */,
 			);
-			path = view;
+			path = lottery;
+			sourceTree = "<group>";
+		};
+		0578016A225AD16800D49FFF /* app */ = {
+			isa = PBXGroup;
+			children = (
+				053E933A22562B2B002E0BDB /* AppDelegate.swift */,
+				053E934622562B2C002E0BDB /* LaunchScreen.storyboard */,
+				053E934922562B2C002E0BDB /* Info.plist */,
+				053E934122562B2B002E0BDB /* OpenData.xcdatamodeld */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		0578016B225AD18800D49FFF /* plugin */ = {
+			isa = PBXGroup;
+			children = (
+				05CB5A2C22587E25006CFCFC /* tab */,
+			);
+			path = plugin;
 			sourceTree = "<group>";
 		};
 		05CB5A2C22587E25006CFCFC /* tab */ = {
@@ -303,7 +322,8 @@
 				05CB5A302258854A006CFCFC /* UIViewAdditions.swift in Sources */,
 				05CB5A2E22587E80006CFCFC /* PaperTabView.swift in Sources */,
 				053E93542257433E002E0BDB /* IconModel.swift in Sources */,
-				053E933D22562B2B002E0BDB /* ViewController.swift in Sources */,
+				053E933D22562B2B002E0BDB /* MainViewController.swift in Sources */,
+				05780168225ACB1B00D49FFF /* LotteryViewController.swift in Sources */,
 				05CB5A3522599DDB006CFCFC /* NewsCell.swift in Sources */,
 				053E934322562B2B002E0BDB /* OpenData.xcdatamodeld in Sources */,
 				05CB5A3E2259EC77006CFCFC /* PhonePlaceModel.swift in Sources */,

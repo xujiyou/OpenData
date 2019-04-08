@@ -9,7 +9,9 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+let primaryColor = UIColor(red: 0, green: 155 / 255, blue: 1, alpha: 1.0)
+
+class MainViewController: UIViewController {
     
     var shadowImage: UIImage?
     
@@ -18,7 +20,7 @@ class ViewController: UIViewController {
     let iconList = [
         IconModel(iconName: "one-news", title: "新闻头条", controller: NewsViewController()),
         IconModel(iconName: "two-phone", title: "手机号码归属地", controller: PhonePlaceViewController()),
-        IconModel(iconName: "three-lottery", title: "彩票开奖结果", controller: NewsViewController()),
+        IconModel(iconName: "three-lottery", title: "彩票开奖结果", controller: LotteryViewController()),
         IconModel(iconName: "four-weather", title: "天气预报", controller: NewsViewController()),
         IconModel(iconName: "five-ercode", title: "二维码生成", controller: NewsViewController()),
         IconModel(iconName: "six-exchange", title: "汇率", controller: NewsViewController()),
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return iconList.count

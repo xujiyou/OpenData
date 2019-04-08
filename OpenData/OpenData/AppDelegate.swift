@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-        let navController = UINavigationController(rootViewController: ViewController())
+        let navController = UINavigationController(rootViewController: MainViewController())
         navController.view.backgroundColor = UIColor.white
         let image = UIImage(named: "icons8-返回-24")
         navController.navigationBar.backIndicatorImage = image
